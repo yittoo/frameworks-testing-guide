@@ -1,5 +1,5 @@
 const graphql = require("graphql");
-const { GraphQLSchema, GraphQLObjectType, GraphQLString } = graphql;
+const { GraphQLSchema } = graphql;
 
 const query = require("./queries");
 const mutation = require("./mutations");

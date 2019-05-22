@@ -26,10 +26,12 @@ module.exports = {
     nonNullObjKeys.forEach(key => {
       objToCast[key] = args[key];
     });
-    return Movie.findById(args.id).then(movie => {
-      return movie.updateOne({ $set: { ...objToCast } }).then(() => {
-        return { ...movie._doc, ...objToCast };
-      });
-    }).catch(err => err);
+    return Movie.findById(args.id)
+      .then(movie => {
+        return movie.updateOne({ $set: { ...objToCast } }).then(() => {
+          return { ...movie._doc, ...objToCast };
+        });
+      })
+      .catch(err => err);
   }
 };

@@ -26,10 +26,12 @@ module.exports = {
     nonNullObjKeys.forEach(key => {
       objToCast[key] = args[key];
     });
-    return Book.findById(args.id).then(book => {
-      return book.updateOne({ $set: { ...objToCast } }).then(() => {
-        return { ...book._doc, ...objToCast };
-      });
-    }).catch(err => err);
+    return Book.findById(args.id)
+      .then(book => {
+        return book.updateOne({ $set: { ...objToCast } }).then(() => {
+          return { ...book._doc, ...objToCast };
+        });
+      })
+      .catch(err => err);
   }
 };

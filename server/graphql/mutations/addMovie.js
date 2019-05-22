@@ -22,4 +22,4 @@ module.exports = {
   resolve(parentValue, args) {
     return new Movie({ ...args }).save();
   }
-}
+};
