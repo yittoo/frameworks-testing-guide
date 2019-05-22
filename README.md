@@ -9,3 +9,7 @@ To use respectively run following commands:
 2) npm run install-client || yarn install-client
 3) npm run install-server|| yarn install-server
 4) npm start || yarn start
+
+-----
+
+You can also `cd client` || `cd server` then run `npm run test` || `yarn test`

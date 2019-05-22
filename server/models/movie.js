@@ -9,7 +9,8 @@ var movieSchema = new mongoose.Schema(
     bookId: {
       id: {
         type: mongoose.Schema.Types.ObjectId,
-        ref: "Book"
+        ref: "Book",
+        default: null
       }
     }
   },
