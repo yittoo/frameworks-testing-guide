@@ -17,20 +17,27 @@ You can also `cd client` || `cd server` then run `npm run test` || `yarn test`
 
 -----
 
-DONE:
+### DONE:
 Server side GraphQL setup
 
 Add tests for DB Models
+
 Add DB Models
 
-TODO:
+### TODO:
 Setup server side GraphQL unit testing
 
+
 Add tests for Apollo Store
+
 Setup Apollo Store
 
+
 Add tests for Redux Store
+
 Setup Redux Store
 
+
 Add tests for UI
+
 Make a UI
